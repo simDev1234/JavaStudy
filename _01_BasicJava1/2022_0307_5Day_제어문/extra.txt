@@ -1,0 +1,3 @@
+//디버깅할 때, 이클립스에서 Run>Debug 
+		//F5:step into - 메소드 안으로 진입
+		//F6:step over - Toggle Breakpoint에서 하나씩 실행하기

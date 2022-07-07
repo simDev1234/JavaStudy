@@ -1,0 +1,33 @@
+package mymain;
+
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+
+public class _04_Hello_Nation extends JFrame {
+
+	public _04_Hello_Nation() {
+		super("각 나라 인사말");
+		
+		GridLayout gl = new GridLayout(5,1);
+		this.setLayout(gl);
+		
+		JButton jbt_kor = new JButton("한국어 인사말");
+
+		//위치             x   y
+		super.setLocation(200, 200);
+
+		//크기
+		super.setSize(400, 400);
+
+		//보여주기
+		this.setVisible(true);
+
+		//종료
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		new _04_Hello_Nation();
+	}
+}

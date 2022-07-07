@@ -1,0 +1,32 @@
+package mymain;
+
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+
+public class _03_GridLayoutTest extends JFrame {
+
+	public _03_GridLayoutTest() {
+		super("");
+		
+		//Layout변경
+		GridLayout gl = new GridLayout(3, 4);
+		this.setLayout(gl);
+
+		//위치             x   y
+		super.setLocation(200, 200);
+
+		//크기
+		super.setSize(400, 400);
+
+		//보여주기
+		this.setVisible(true);
+
+		//종료
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		new _03_GridLayoutTest();
+	}
+}

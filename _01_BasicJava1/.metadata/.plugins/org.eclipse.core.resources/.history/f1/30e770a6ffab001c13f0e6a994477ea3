@@ -1,0 +1,16 @@
+package mymain;
+
+class TestA{
+	int a;
+	
+}
+
+class TestB extends TestA{
+	
+}
+
+public class _05_AnonymousTest {
+	public static void main(String[] args) {
+		
+	}
+}

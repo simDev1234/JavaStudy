@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="ReadThread"/>
+		<list key="findhistory">
+			<item value="ReadThread"/>
+			<item value="localhost"/>
+			<item value="jta_display"/>
+			<item value="jta"/>
+			<item value="nickname"/>
+			<item value="돋움체"/>
+			<item value="탈퇴할"/>
+			<item value="red"/>
+			<item value="PersonVo2"/>
+			<item value="result"/>
+			<item value="moneyArr"/>
+			<item value="money_5000"/>
+			<item value="money_10000"/>
+			<item value="money_50000"/>
+			<item value="// 청년 : 20~40"/>
+		</list>
+		<list key="replacehistory">
+			<item value="굴림체"/>
+			<item value="blue"/>
+			<item value="green"/>
+			<item value="PersonVo3"/>
+			<item value="sum"/>
+			<item value="grade"/>
+			<item value="cntArr"/>
+			<item value="cnt10000"/>
+			<item value="cnt50000"/>
+			<item value="||"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="-492"/>
+		<item key="DIALOG_Y_ORIGIN" value="253"/>
+		<item key="DIALOG_WIDTH" value="501"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

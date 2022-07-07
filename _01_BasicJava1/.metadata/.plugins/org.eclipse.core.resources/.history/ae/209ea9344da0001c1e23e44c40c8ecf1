@@ -1,0 +1,25 @@
+
+public class _Q14_제어문연습15 {
+
+	public static void main(String[] args) {
+		int sign = -1;
+		int i = 1;
+		
+		while(i < 20) {
+			System.out.printf("%d",i*sign);
+			i+=2;
+		}
+		
+		/*
+		for(int i = 1; i < 20; i+=2) {
+			if(i == 1) {
+				System.out.printf("%d",i*sign);
+			}else {
+				System.out.printf(", %d",i*sign);
+			}
+			sign = -sign;
+		}
+		*/
+	}
+
+}

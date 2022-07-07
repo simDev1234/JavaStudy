@@ -1,0 +1,58 @@
+package mymain;
+
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.JFrame;
+
+public class _07_KeyEventTest extends JFrame {
+
+	public _07_KeyEventTest() {
+		super("KeyEvent 연습");
+		
+		//키 이벤트 초기화
+		init_key_event();
+
+		//위치             x   y
+		super.setLocation(200, 200);
+
+		//크기
+		super.setSize(400, 400);
+
+		//보여주기
+		this.setVisible(true);
+
+		//종료
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	private void init_key_event() {
+		
+		KeyListener listener = new KeyListener() {
+			
+			@Override
+			public void keyTyped(KeyEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("--키를 --");
+			}
+			
+			@Override
+			public void keyReleased(KeyEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("--키를 떼었을때--");
+			}
+			
+			@Override
+			public void keyPressed(KeyEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("--키가 눌렀을때--");
+			}
+		};
+		
+		this.addKeyListener(null);
+	}
+
+	public static void main(String[] args) {
+		new _07_KeyEventTest();
+	}
+}

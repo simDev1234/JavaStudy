@@ -1,0 +1,20 @@
+package mymain;
+
+class TestA{
+	int a;
+	
+	public void sub() {
+		System.out.println("--TestA : sub()--");
+	}
+}
+
+class TestB extends TestA{
+	
+}
+
+public class _05_AnonymousTest {
+	public static void main(String[] args) {
+		TestA a = new TestB();
+		
+	}
+}

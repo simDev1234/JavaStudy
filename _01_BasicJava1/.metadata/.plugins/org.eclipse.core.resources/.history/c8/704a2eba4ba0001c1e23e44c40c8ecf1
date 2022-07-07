@@ -1,0 +1,23 @@
+import java.io.IOException;
+
+public class _Q12_제어문연습13 {
+
+	public static void main(String[] args) throws IOException {
+		
+		int ch;
+		
+		System.out.println("데이터를 입력하세요. 끝내려면 [Ctrl] + Z를 누르세요.");
+		do 
+		{
+			
+			ch = System.in.read();
+			System.out.printf("%c",ch);
+			
+			if(ch == -1) break;
+			
+		}while(true);
+		
+		
+	}
+
+}

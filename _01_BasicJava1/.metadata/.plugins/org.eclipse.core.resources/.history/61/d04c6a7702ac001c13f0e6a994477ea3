@@ -1,0 +1,34 @@
+package mymain;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class _06_CardLayoutTest extends JFrame {
+
+	public _06_CardLayoutTest() {
+		super("CardLayout 연습");
+		
+		//메뉴생성
+		init_menubar();
+
+		//위치             x   y
+		super.setLocation(200, 200);
+
+		//크기
+		super.setSize(400, 400);
+
+		//보여주기
+		this.setVisible(true);
+
+		//종료
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	private void init_menubar() {
+		JPanel p = new JPanel(new GridLayout(1,3));		
+	}
+
+	public static void main(String[] args) {
+		new _06_CardLayoutTest();
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;2022_0329_자바IO&apos; to &apos;2022_0329_20Day_자바IO&apos;&#x0D;&#x0A;- Original element: &apos;2022_0329_자바IO&apos;&#x0D;&#x0A;- Renamed element: &apos;2022_0329_자바IO&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;2022_0329_자바IO&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=2022_0329_자바IO" name="2022_0329_20Day_자바IO" references="true" stamp="1648532082196" version="1.0"/>
+</session>

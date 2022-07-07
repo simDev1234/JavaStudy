@@ -1,0 +1,9 @@
+package mymain;
+
+import javax.swing.JPanel;
+
+public class Screen1 extends JPanel { 
+	public Screen1() {
+		this.setLayout(new BorderLayout); //Panel은 일반적으로 Flow Layout을 씀
+	}
+}

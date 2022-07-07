@@ -1,0 +1,7 @@
+package mymain;
+
+public class _05_AnonymousTest {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;vo&apos; to &apos;2022_0329_20Day_자바IO/src&apos;&#x0D;&#x0A;- Original project: &apos;2022_0328_19Day_컬렉션&apos;&#x0D;&#x0A;- Destination element: &apos;2022_0329_20Day_자바IO/src&apos;&#x0D;&#x0A;- Original element: &apos;2022_0328_19Day_컬렉션/src/vo&apos;" description="Copy package" destination="=2022_0329_20Day_자바IO/src" element1="/src&lt;vo" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1648543517480" version="1.0"/>
+</session>

@@ -1,0 +1,17 @@
+
+public class _Q12_제어문연습13 {
+
+	public static void main(String[] args) {
+		
+		int ch;
+		
+		do 
+		{
+			System.out.println("데이터를 입력하세요. 끝내려면 [Ctrl] + Z를 누르세요.");
+			
+		}while(true);
+		
+		
+	}
+
+}

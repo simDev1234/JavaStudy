@@ -1,0 +1,36 @@
+package mymain;
+
+import javax.swing.JFrame;
+
+public class _07_KeyEventTest extends JFrame {
+
+	public _07_KeyEventTest() {
+		super("KeyEvent 연습");
+		
+		//키 이벤트 초기화
+		init_key_event();
+
+		//위치             x   y
+		super.setLocation(200, 200);
+
+		//크기
+		super.setSize(400, 400);
+
+		//보여주기
+		this.setVisible(true);
+
+		//종료
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	private void init_key_event() {
+		
+		KeyListener listener = new KeyListener();
+		
+		this.addKeyListener(null);
+	}
+
+	public static void main(String[] args) {
+		new _07_KeyEventTest();
+	}
+}

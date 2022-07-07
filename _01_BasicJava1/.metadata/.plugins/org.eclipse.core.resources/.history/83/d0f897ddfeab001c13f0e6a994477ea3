@@ -1,0 +1,111 @@
+package mymain;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class _04_Hello_Nation extends JFrame {
+	
+	//Member로서의 내부클래스 선언
+	class ButtonEventObject implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			//JOptionPane.showMessageDialog(null, "안녕하세요!!"); //null이면, 모니터의 정중앙 -> 윈도우창에 넣으면 창의 정중앙
+			JOptionPane.showMessageDialog(_04_Hello_Nation.this, "안녕하세요!!");
+			//내부클래스에서 외부클래스를 호출할 때는 _04_Hello_Nation.this
+			//내부클래스에서 내부클래스를 호출할 때는 this
+		}
+		
+	}
+
+	public _04_Hello_Nation() {
+		super("각 나라 인사말");
+		
+		GridLayout gl = new GridLayout(6,1);
+		this.setLayout(gl);
+		
+		JButton jbt_kor = new JButton("한국어 인사말");
+		JButton jbt_eng = new JButton("영  어 인사말");
+		JButton jbt_jpn = new JButton("일본어 인사말");
+		JButton jbt_chn = new JButton("중국어 인사말");
+		JButton jbt_fra = new JButton("프랑스 인사말");
+		JButton jbt_ger = new JButton("독일어 인사말");
+		
+		this.add(jbt_kor);
+		this.add(jbt_eng);
+		this.add(jbt_jpn);
+		this.add(jbt_chn);
+		this.add(jbt_fra);
+		this.add(jbt_ger);
+		
+		//한국어 인사말
+		//jbt_kor 버튼 눌렀을 때 이벤트 등록(JVM에게 등록)
+		//이벤트 소트.addXXXListener (처리객체가 갖고 있는 interface)
+		ButtonEventObject listener = new ButtonEventObject();
+		jbt_kor.addActionListener(listener);
+		
+		//영어 인사말
+		//로컬 내부 클래스(Local Inner Class)
+		class EngButtonEventObject implements ActionListener{
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//System.out.println(e);
+				JOptionPane.showMessageDialog(_04_Hello_Nation.this, "Hi Everyone!");
+			}
+			
+		}
+		jbt_eng.addActionListener(new EngButtonEventObject());
+		
+		//일본어 인사말
+		//익명 내부 클래스
+		ActionListener listener2 = new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(_04_Hello_Nation.this, "곤니치와");				
+			}
+		};
+		jbt_jpn.addActionListener(listener2);
+		
+		//중국어 인사말
+		jbt_chn.addActionListener( new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				JOptionPane.showMessageDialog(_04_Hello_Nation.this, "니하오마");
+			}
+		} );
+		
+		//프랑스어 인사말
+		//람다식(Lambda) 
+		jbt_fra.addActionListener(e->JOptionPane.showMessageDialog(_04_Hello_Nation.this, "봉쥬르"));
+		
+		//독일어 인사말
+		jbt_ger.addActionListener((e) -> {JOptionPane.showMessageDialog(_04_Hello_Nation.this, "구덴 탁");});
+		
+		//람다식 예시
+		int n = (1,2)->{return a + b;};
+
+		//위치             x   y
+		super.setLocation(200, 200);
+
+		//크기
+		super.setSize(400, 400);
+
+		//보여주기
+		this.setVisible(true);
+
+		//종료
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		new _04_Hello_Nation();
+	}
+}

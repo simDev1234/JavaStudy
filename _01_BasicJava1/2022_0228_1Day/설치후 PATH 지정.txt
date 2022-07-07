@@ -1,0 +1,15 @@
+윈도우 검색 > 시스템 환경 변수 편집
+
+자바 컴파일 : C:\Program Files\Java\jdk-17.0.1\bin\javac.exe
+자바 : C:\Program Files\Java\jdk-17.0.1\bin\java.exe
+
+JAVA_HOME=C:\Program Files\Java\jdk-17.0.1
+Path=C:\Program Files\Java\jdk-17.0.1\bin
+또는
+Path=%JAVA_HOME%\bin
+
+echo 제어자 : 경로를 출력
+
+※ 참조
+000에 대한 사용자 변수 : 운영체제 안 특정 user를 위한 환경 변수를 등록하는 곳
+시스템 변수 : 운영체제 안에 user를 여러명이 있다고 했을 때, 모든 user가 공통적으로 사용하는 환경변수를 등록하는 곳

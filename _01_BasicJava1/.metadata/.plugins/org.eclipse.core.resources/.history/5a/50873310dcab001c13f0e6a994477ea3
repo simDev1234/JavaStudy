@@ -1,0 +1,26 @@
+package mymain;
+
+import javax.swing.JFrame;
+
+public class _01_BorderLayoutTest extends JFrame {
+
+	public _01_BorderLayoutTest() {
+		super("");
+
+		//위치             x   y
+		super.setLocation(200, 200);
+
+		//크기
+		super.setSize(400, 400);
+
+		//보여주기
+		this.setVisible(true);
+
+		//종료
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		new _01_BorderLayoutTest();
+	}
+}
